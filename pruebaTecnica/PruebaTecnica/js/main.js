@@ -47,3 +47,9 @@ function buscarVoluntario() {
     var nombreEl = document.getElementById(alumnos[rnd]);
     nombreEl.className = "glowbox";
 }
+
+function saludar(){
+    console.log("Ha entrado en la funcion")
+    var nombreEl = document.getElementById("label");
+    nombreEl.innerHTML = "¡¡Hola Mundo!!";
+}

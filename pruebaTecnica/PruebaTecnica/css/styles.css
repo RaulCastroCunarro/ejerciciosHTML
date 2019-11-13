@@ -18,17 +18,23 @@
     width: 150px;
     height: 150px;
     background-color: #0099CC;  
-    animation: mymove 2s infinite alternate;
+    animation: mymove 2s infinite;
 }
 
 @keyframes mymove {
-    from {
+    0% {
         background-color: #0099CC;  
         border-radius: 0;
     }
-    to {
+    50% {
         background-color:red;  
-        border-radius: 50%;
+        border-radius: 30%;
+    }
+    100% {
+        background-color: #0099CC;  
+        border-radius: 0;
+        transform: rotate(360deg);
+        transform: rotate3d(30,30,30,720deg)
     }
   }
 
@@ -48,8 +54,8 @@
 	left: -2px;
 	background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
 	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
 	z-index: -1;
 	animation: animate 20s linear infinite;
 }
@@ -81,7 +87,7 @@
 .parallax {
     position: relative;
     /* The image used */
-    background-image: url(/images/office.jpg);
+    background-image: url(/PruebaTecnica/images/office.jpg);
   
     /* Set a specific height */
     height: 100vh; 
@@ -141,7 +147,7 @@ table {
 th {
     border: 1px solid #000; /*shorthand*/
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 td{
