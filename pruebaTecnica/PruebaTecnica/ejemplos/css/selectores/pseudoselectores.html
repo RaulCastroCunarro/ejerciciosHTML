@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- html5 -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores Avanzados</title>
+    <base href="/PruebaTecnica/"> <!-- La base para construir todas las rutas de esta pagina -->
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        p::first-letter {
+            font-family: 'Algerian';
+            font-weight: 800;
+            font-size: 2em;
+            color: red;
+            text-decoration: underline blue;
+        }
+
+        p:empty {
+            background: lightblue;
+        }
+
+        span:first-child {
+            background: lightcoral;
+        }
+
+        tr:first-of-type {
+            background: lightgreen;
+        }
+
+        tr:last-child {
+            background: mediumorchid;
+        }
+
+        *[data-resaltar]:not(p) {
+            border: 3px solid yellow;
+        }
+
+        div:first-of-type{
+            display: inline-block;
+            width: 40%;
+        }
+
+        table{
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="ejemplos/css/css.html">Volver</a>
+    </nav>
+    <h1 data-resaltar="">Pseudoselectores</h1>
+    <p data-resaltar="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a fuga nisi esse recusandae
+        necessitatibus quae
+        minima. <span>Officiis quo assumenda quaerat sunt adipisci deserunt fugiat illum maxime!</span> Dolore, corrupti
+        sapiente?
+    </p>
+    <p data-prueba="especial">Adipisci repellat nobis dolorum cumque! Aspernatur, at ratione, itaque voluptate eveniet,
+        quas amet quos ex
+        maxime nesciunt dolore impedit culpa ea accusantium dicta? Minima minus quibusdam quam dolores tenetur quos?</p>
+    <p data-prueba="especial">Expedita delectus soluta praesentium dignissimos! Voluptate vel iure nisi aliquam quos
+        perferendis, dolor
+        eligendi eius saepe porro cumque in repudiandae explicabo, fugiat obcaecati, illo unde consequatur ullam
+        similique. Sapiente, iste!</p>
+    <p data-prueba="especial">Est, doloremque ipsum nostrum fuga nam autem dolorem reprehenderit voluptatem delectus
+        ipsam culpa laudantium
+        facere saepe maiores ab commodi architecto atque vel. Debitis quam ea recusandae saepe fuga aut dignissimos!</p>
+    <p data-prueba="especial2">Laudantium temporibus ut aliquid vel autem rerum expedita tenetur eaque, ratione harum,
+        sed sapiente non eius hic
+        unde corporis dicta blanditiis totam nam asperiores voluptatum excepturi dolor! Necessitatibus, mollitia natus.
+    </p>
+
+
+    <div data-resaltar="">
+        <table id="basico">
+            <caption>Esquema de la clase</caption>
+            <tr>
+                <th colspan="2">Ander</th>
+            </tr>
+            <tr>
+                <td id="Mikel">Mikel</td>
+                <td id="Joseba">Joseba</td>
+            </tr>
+            <tr>
+                <td>Vacio</td>
+                <td id="Raul">Raúl</td>
+            </tr>
+            <tr>
+                <td id="Erlantz">Erlantz</td>
+                <td id="Cristian">Cristian</td>
+            </tr>
+            <tr>
+                <td id="Ana">Ana</td>
+                <td id="Alejandro">Alejandro</td>
+            </tr>
+            <tr>
+                <td id="Maria">María</td>
+                <td id="Juancarlos">Juan Carlos</td>
+            </tr>
+            <tr>
+                <td id="Kiryl">Kiryl</td>
+                <td id="Inigo">Iñigo</td>
+            </tr>
+            <tr>
+                <td>Vacio</td>
+                <td id="Endika">Endika</td>
+            </tr>
+            <tr>
+                <td id="Iker">Iker</td>
+                <td id="Aitor">Aitor</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

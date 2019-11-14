@@ -10,94 +10,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-.box-animacion{
-
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #0099CC;  
-    animation: mymove 2s infinite;
-}
-
-@keyframes mymove {
-    0% {
-        background-color: #0099CC;  
-        border-radius: 0;
-    }
-    50% {
-        background-color:red;  
-        border-radius: 30%;
-    }
-    100% {
-        background-color: #0099CC;  
-        border-radius: 0;
-        transform: rotate(360deg);
-        transform: rotate3d(30,30,30,720deg)
-    }
-  }
-
-#nombre {
-    visibility: hidden;
-}
-
-.glowbox {
-	position: relative;
-    background: #ecf0f5;
-}
-.glowbox:before,
-.glowbox:after {
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
-	background-size: 400%;
-	width: calc(100% + 6px);
-	height: calc(100% + 6px);
-	z-index: -1;
-	animation: animate 20s linear infinite;
-}
-.glowbox:after {
-	filter: blur(20px);
-}
-@keyframes animate {
-	0%
-	{
-		background-position: 0 0;
-	}
-	50%
-	{
-		background-position: 400% 0;
-	}
-	100%
-	{
-		background-position: 0 0;
-	}
-}
-
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.parallax {
-    position: relative;
-    /* The image used */
-    background-image: url(/PruebaTecnica/images/office.jpg);
-  
-    /* Set a specific height */
-    height: 100vh; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
 body {
     text-align: center;
@@ -106,36 +20,29 @@ body {
     height: 1200px;
 }
 
-h1 {
+h1, h2, h3 {
     color: #0099CC;
-    font-size: 3em;
-    display: inline;
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+h1 {
+    
+    font-size: 3em;
     text-transform: uppercase;
 }
 
 h2 {
-    color: #0099CC;
     font-size: 2em;
     text-transform: capitalize;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
 }
 
 h3{
     font-size: 1.5em;
     text-transform: capitalize;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     margin-bottom: 1%;
 }
 
@@ -163,4 +70,96 @@ td:hover {
 
 tr {
     width: 100%
+}
+
+p {
+    color: teal;
+}
+
+#nombre {
+    visibility: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.parallax {
+    position: relative;
+    /* The image used */
+    background-image: url(/PruebaTecnica/images/office.jpg);
+  
+    /* Set a specific height */
+    height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.box-animacion{
+
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: #0099CC;  
+    animation: mymove 2s infinite;
+}
+
+.glowbox {
+	position: relative;
+    background: #ecf0f5;
+}
+.glowbox:before,
+.glowbox:after {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+	background-size: 400%;
+	width: calc(100% + 6px);
+	height: calc(100% + 6px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+.glowbox:after {
+	filter: blur(20px);
+}
+
+@keyframes mymove {
+    0% {
+        background-color: #0099CC;  
+        border-radius: 0;
+    }
+    50% {
+        background-color:red;  
+        border-radius: 30%;
+    }
+    100% {
+        background-color: #0099CC;  
+        border-radius: 0;
+        transform: rotate(360deg);
+        transform: rotate3d(30,30,30,720deg)
+    }
+  }
+
+@keyframes animate {
+	0%
+	{
+		background-position: 0 0;
+	}
+	50%
+	{
+		background-position: 400% 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+	}
 }
