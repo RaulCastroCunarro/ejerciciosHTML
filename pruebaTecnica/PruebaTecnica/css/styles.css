@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+.prueba{
+    color: red;
+    font-size: 3em;
+}
+
 @keyframes mymove {
     0% {
         background-color: #0099CC;  
